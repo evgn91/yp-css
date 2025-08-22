@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "minify": "css-minify -d src -o public"
+    "minify": "css-minify -d src -o public",
+    "build": "gulp build",
+    "dev": "gulp watch",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,10 @@
   "homepage": "https://github.com/evgn91/yp-css#readme",
   "description": "",
   "devDependencies": {
-    "css-minify": "^2.1.0"
+    "css-minify": "^2.1.0",
+    "gulp": "^5.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.1.0"
   }
 }
