@@ -1,0 +1,254 @@
+body
+{
+    margin: 0;
+}
+
+.yp-header-wrap
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.yp-header-container
+{
+    display: flex;
+}
+
+.yp-header-container-top
+{
+    height: 30px;
+}
+
+.yp-header-container-bottom
+{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yp-header
+{
+    font-family: 'SF Pro Display';
+}
+
+.yp-header-link
+{
+    text-decoration: none;
+    color: #858585 !important;
+    transition: all .375s ease;
+    letter-spacing: .02em;
+}
+
+.yp-header-link:hover
+{
+    color: #181818 !important;
+}
+
+.yp-header-link:hover
+{
+    color: #ff1060;
+}
+
+.yp-header-wrap-top
+{
+    /* border-bottom: 1px solid rgb(242, 242, 244); */
+    background-color: rgb(242 244 246);
+}
+
+.yp-header-wrap-bottom
+{
+    border-bottom: 1px solid #e3e3e9;
+}
+
+.yp-header-socials
+{
+    display: flex;
+    gap: 1px;
+    font-size: 0px;
+}
+
+.yp-header-socials > a 
+{
+    height: fit-content;
+}
+
+.yp-header-socials > a > svg > path
+{
+    fill: #858585;
+    transition: fill .25s ease;
+}
+
+.yp-header-socials > a:hover > svg > path
+{
+    fill: #000000;
+}
+
+#yp-header-socials-icon-yt
+{
+    margin-left: 2px;
+}
+
+.yp-header-phone-wrap > a 
+{
+    text-decoration: none;
+    color: #858585 !important;
+    font-size: 13px;
+    position: relative;
+    top: 2px;
+    transition: color .25s ease;
+}
+
+.yp-header-phone-wrap > a:hover 
+{
+    color: #000000 !important;
+}
+
+.yp-header-items-top-right-wrap
+{
+    display: flex;
+    gap: 8px;
+}
+
+.yp-header-bottom-menu > a
+{
+    text-decoration: none;
+    color: #000 !important;
+    font-weight: 400;
+    transition: all .375s ease;
+    letter-spacing: .02em;
+}
+
+.yp-header-bottom-menu > a:hover
+{
+    color: #ff1060 !important;            
+}
+
+.yp-header-logo{
+    display: flex;
+}
+
+.yp-header-logo > a
+{
+    font-size: 0px;
+}
+
+.yp-header-button
+{
+    background: #fff;
+    height: 48px;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 14px 10px 10px;
+    font-weight: 400;
+    font-family: 'SF Pro Display';
+    font-size: 15px;
+    transition: background-color .25s ease;
+}
+
+.yp-header-button:hover
+{
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+
+#yp-header-cart-button
+{
+    border: none;
+    padding: 0px 12px;
+    margin-right: -12px;
+}
+
+#yp-header-cart-button > img
+{
+    position: relative;
+    bottom: 2px;
+}
+
+.yp-header-top-location
+{
+    color: #858585;
+}
+
+#yp-header-new-link
+{
+    color: rgb(0, 0, 0) !important;
+}
+
+#yp-header-new-link:hover
+{
+    color: #ff1060 !important; 
+}
+
+@media (min-width: 320px)
+{
+    .yp-header-wrap
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .yp-header-wrap
+    {
+        display: flex;
+    }
+
+    .yp-header-container
+    {
+        width: 1170px;
+    }
+
+    .yp-header-container-bottom
+    {
+        height: 95px;
+    }
+
+    .yp-header-items-top-wrap
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .yp-header-top-menu
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        font-size: 12px;
+    }
+
+    .yp-header-top-location
+    {
+        font-size: 14px;
+        display: flex;
+        gap: 4px;
+        font-weight: 500;
+    }
+
+    .yp-header-top-location > svg > path
+    {
+        fill: #858585;
+    }
+
+    .yp-header-bottom-menu
+    {
+        display: flex;
+        align-items: center;
+        font-size: 0px;
+        gap: 16px;
+    }
+
+    .yp-header-bottom-menu > a
+    {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
